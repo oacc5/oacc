@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.oacc{
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid black;
+  transition: 0.50s;
+}
+.oacc:hover{
+  border: 1px solid #f39c12;
+}
+
+header nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 600px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 15px;
+    border-top: 1px solid #333;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('images/photo-1507692049790-de58290a4334.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f39c12;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.50s;
+}
+.btn:hover {
+  background-color: white;
+  color: #f39c12;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* EVENTS */
+.events {
+  background: #f4f4f4;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -5,75 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OACC - One Accord Christian Center</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h2 class="oacc">OACC</h2>
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
-    </div>
-  
-    <nav id="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Events</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h2 class="logo">OACC</h2>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>ONE ACCORD CHRISTIAN CENTER</h1>
-      <p>A place of faith, unity, and growth</p>
-      <a href="#" class="btn">Join Us This Sunday</a>
-    </div>
-  </section>
+  <div class="menu-btn" id="menu-btn">☰</div>
+</header>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>At OACC, we are a family growing together in Christ. We believe in unity, love, and building a strong spiritual life.</p>
-  </section>
+<!-- FULL SCREEN MENU -->
+<div class="overlay" id="overlay"></div>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Service Times</h2>
+<nav id="nav">
+  <div class="close-btn" id="close-btn">×</div>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#sermons">Sermons</a>
+  <a href="#events">Events</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <div class="service-grid">
-      <div class="card">Sunday - 8:00 AM</div>
-      <div class="card">Tuesday - 6:00 PM</div>
-      <div class="card">Thursday - 10:00 AM</div>
-      <div class="card">Friday - 6:00 PM</div>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>ONE ACCORD CHRISTIAN CENTER</h1>
+    <p>A place of unity, faith & transformation</p>
+    <a href="#events" class="btn">Join Us This Week</a>
+  </div>
+</section>
 
-  <!-- EVENTS -->
-  <section class="events">
-    <h2>Upcoming Events</h2>
+<section id="about" class="section">
+  <h2>About OACC</h2>
+  <p>We are a family growing in Christ, love, and unity.</p>
+</section>
 
-    <div class="event-container">
-      <div class="event-card">
-        <h3>Prayer Meeting</h3>
-        <p>Friday - 6:00 PM</p>
-      </div>
+<section class="verse">
+  <h2>Verse of the Day</h2>
+  <p>"Where two or three gather in my name, I am there." - Matthew 18:20</p>
+</section>
 
-      <div class="event-card">
-        <h3>Bible Study</h3>
-        <p>Tuesday - 6:00 PM</p>
-      </div>
-    </div>
-  </section>
+<section id="sermons" class="section dark">
+  <h2>Latest Sermons</h2>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 ONE ACCORD CHRISTIAN CENTER (OACC)</p>
-  </footer>
+<section id="events" class="section">
+  <h2>Service Times</h2>
+  <p>Sunday - 8AM | Tuesday - 6PM | Thursday - 10AM | Friday - 6PM</p>
+</section>
 
-  <script src="script.js"></script>
+<section id="contact" class="section dark">
+  <h2>Contact Us</h2>
+  <input placeholder="Name">
+  <input placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button>Send</button>
+</section>
+
+<footer>
+  <p>© 2026 OACC</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
